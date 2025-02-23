@@ -14,7 +14,8 @@ engine performance, fuel efficiency, and so on. The response variable is MSRP,
 categorized into three groups using 33% and 67% quantile thresholds to define the
 categories.
 
-![image](https://github.com/user-attachments/assets/5bf3a462-43a6-4390-8e38-e16a98f17381) ![image](https://github.com/user-attachments/assets/802a57f4-5f1c-4895-b809-c05e8d308f8d)
+![image](https://github.com/user-attachments/assets/5bf3a462-43a6-4390-8e38-e16a98f17381) 
+![image](https://github.com/user-attachments/assets/802a57f4-5f1c-4895-b809-c05e8d308f8d)
 
 
 
@@ -28,6 +29,11 @@ careful preprocessing.
 3. Feature Relationships: Strong correlations, such as Year and MSRP (r = 0.7),
 Highway MPG and City MPG (r = 0.93), and Engine Cylinders and MPG (r = -0.7),
 highlight key trends that require careful interpretation.
+
+![image](https://github.com/user-attachments/assets/b74ced9d-ab89-4f95-8010-515b861ce6f9)
+![image](https://github.com/user-attachments/assets/67025314-3d39-42de-a651-10e2b5bf05a0)
+![image](https://github.com/user-attachments/assets/6e831aca-88ec-4e0b-a247-feb9272d7654)
+
 
 These factors require careful preprocessing to ensure the accuracy and reliability of
 analysis.
