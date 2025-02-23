@@ -8,16 +8,14 @@ vehicle features, and identifying patterns can lead to improved market strategie
 goal of this project is to uncover relationships between these factors and pricing.
 
 ## Data Description
+
+![image](https://github.com/user-attachments/assets/13618461-9917-4ccf-b6c2-e68e25c05cb3)
+
 The dataset includes information on 11,000 cars produced from 1990 to 2017. The
 dataset used for this analysis includes detailed car specifications such as MSRP (price),
 engine performance, fuel efficiency, and so on. The response variable is MSRP,
 categorized into three groups using 33% and 67% quantile thresholds to define the
 categories.
-
-![image](https://github.com/user-attachments/assets/5bf3a462-43a6-4390-8e38-e16a98f17381) 
-![image](https://github.com/user-attachments/assets/802a57f4-5f1c-4895-b809-c05e8d308f8d)
-
-
 
 
 ### Challenges
@@ -30,10 +28,7 @@ careful preprocessing.
 Highway MPG and City MPG (r = 0.93), and Engine Cylinders and MPG (r = -0.7),
 highlight key trends that require careful interpretation.
 
-![image](https://github.com/user-attachments/assets/b74ced9d-ab89-4f95-8010-515b861ce6f9)
-![image](https://github.com/user-attachments/assets/67025314-3d39-42de-a651-10e2b5bf05a0)
-![image](https://github.com/user-attachments/assets/6e831aca-88ec-4e0b-a247-feb9272d7654)
-
+![image](https://github.com/user-attachments/assets/ea6d2bea-03c8-4582-b727-f92af948da51)
 
 These factors require careful preprocessing to ensure the accuracy and reliability of
 analysis.
@@ -51,9 +46,15 @@ performance of predictive models. Finally, the dataset was reduced to 3,000 samp
 optimize computational efficiency while preserving representativeness for analysis.
 
 ## B. MANOVA
+
+![image](https://github.com/user-attachments/assets/158848a3-e657-4190-908d-7993ef404a4f)
+
 To assess the suitability of the dataset for MANOVA and LDA, key assumptions were
 evaluated. Normality was examined using Q-Q plots and the Anderson-Darling test,
 which revealed significant deviations from univariate and multivariate normality.
+
+![image](https://github.com/user-attachments/assets/fca004ea-b143-431e-b379-48a741c07e50)
+
 Homogeneity of covariance matrices was tested using Box's M test, where the small p-
 value indicated a violation of this assumption. Despite these issues, MANOVA was
 conducted, showing an extremely small p-value (<2.2e-16), which led to rejecting the
@@ -62,6 +63,10 @@ groups (Low, Mid, High). However, due to non-normality and unequal covariance, t
 robustness of MANOVA and LDA results is limited.
 
 ## C. PCA
+
+![image](https://github.com/user-attachments/assets/1a1caf27-75c9-41de-9be2-992c24798be0)
+![image](https://github.com/user-attachments/assets/192f29a1-0cf1-4eba-9a4c-f2f735f92ed1)
+
 The Principal Component Analysis (PCA) was conducted to reduce the dimensionality
 of the dataset while retaining most of the variance. The first three principal components
 (PC1, PC2, and PC3) were selected based on the eigenvalues greater than 1 and the
@@ -75,10 +80,16 @@ results provide a compact yet comprehensive representation of the original datas
 facilitating further analysis.
 
 ## D. Factor Analysis
+
+![Screenshot 2025-02-22 at 11 28 00 PM](https://github.com/user-attachments/assets/dd94e410-6f52-45a6-abb9-aaa20eac33e2)
+
 Factor analysis determined that four factors were sufficient to explain 81% of the
 variance in the dataset. The number of factors was decided based on cumulative
 variance exceeding 80% and the elbow point observed in the scree plot, where
 additional factors contributed minimal variance.
+
+![image](https://github.com/user-attachments/assets/c79a4878-7bad-4e0e-af5f-9d81098e515d)
+
 The identified factors were interpreted as follows: Factor 1 represents fuel efficiency,
 with high MPG and low engine cylinders indicating better efficiency. Factor 2 reflects
 power and price, capturing high engine horsepower and MSRP associated with
@@ -91,6 +102,9 @@ The optimal number of clusters was determined to be 3, as identified by the elbo
 in the within-cluster sum of squares (WCSS) plot. The addition of the third cluster
 significantly improved the model by reducing WCSS substantially, indicating well-
 defined group separations.
+
+![image](https://github.com/user-attachments/assets/5826b18e-d83f-481a-8e87-5b83d07ce4c0)
+
 Each cluster, represented by unique visualizations like faces and stars, highlights
 distinct traits influenced by variables such as engine horsepower, year, MPG, and
 popularity. The K-Means and cluster plots visually reinforce this separation, displaying
