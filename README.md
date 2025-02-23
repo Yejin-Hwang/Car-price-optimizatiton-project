@@ -14,8 +14,7 @@ engine performance, fuel efficiency, and so on. The response variable is MSRP,
 categorized into three groups using 33% and 67% quantile thresholds to define the
 categories.
 
-![image](https://github.com/user-attachments/assets/5bf3a462-43a6-4390-8e38-e16a98f17381)
-![image](https://github.com/user-attachments/assets/802a57f4-5f1c-4895-b809-c05e8d308f8d)
+![image](https://github.com/user-attachments/assets/5bf3a462-43a6-4390-8e38-e16a98f17381) ![image](https://github.com/user-attachments/assets/802a57f4-5f1c-4895-b809-c05e8d308f8d)
 
 
 
